@@ -35,6 +35,6 @@
         }
     }
     else {
-        header("Location: https://www.google.com");
+        header("Location: https://portal.contigoentodo.com/#/login");
     }
 ?>
