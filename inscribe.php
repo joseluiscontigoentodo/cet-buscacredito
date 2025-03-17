@@ -35,6 +35,6 @@
         }
     }
     else {
-        header("Location: https://portal.contigoentodo.com/#/login");
+        header("Location: https://6yj76mxxeue4ul7zl6zpc76i3i0mfmjz.lambda-url.us-east-1.on.aws/#/login");
     }
 ?>
