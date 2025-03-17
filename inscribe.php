@@ -7,7 +7,7 @@
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://portalclientes-api.cettech.io/api/registro/inscripcion',
+            CURLOPT_URL => 'https://6yj76mxxeue4ul7zl6zpc76i3i0mfmjz.lambda-url.us-east-1.on.aws/registro/inscripcion',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -16,7 +16,7 @@
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS =>'{ "tx":"'.$sNumeroTransaccion.'", "value":"'.$sEncryptedData.'" }',
-            CURLOPT_HTTPHEADER => array('Content-Type: application/json','accept: text/plain')
+            CURLOPT_HTTPHEADER => array('Content-Type: application/json','accept: application/json')
         ));
 
         $response = curl_exec($curl);
