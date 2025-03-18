@@ -28,13 +28,13 @@
         $sRevision = $json['revision'];
 
         if ($sRevision == '') {
-            header("Location: https://6yj76mxxeue4ul7zl6zpc76i3i0mfmjz.lambda-url.us-east-1.on.aws/#/inscribe/".$sId);
+            header("Location: https://staging.d23ivlnpy0466f.amplifyapp.com/inscripcion/confirmacion/".$sId);
         }
         else {
-            header("Location: https://6yj76mxxeue4ul7zl6zpc76i3i0mfmjz.lambda-url.us-east-1.on.aws/#/login");
+            header("Location: https://staging.d23ivlnpy0466f.amplifyapp.com/iniciosesion");
         }
     }
     else {
-        header("Location: https://6yj76mxxeue4ul7zl6zpc76i3i0mfmjz.lambda-url.us-east-1.on.aws/#/login");
+        header("Location: https://staging.d23ivlnpy0466f.amplifyapp.com/iniciosesion");
     }
 ?>
