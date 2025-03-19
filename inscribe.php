@@ -7,7 +7,7 @@
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://portalclientes-api.cettech.io/api/registro/inscripcion',
+            CURLOPT_URL => 'https://1vif50y1v5.execute-api.sa-east-1.amazonaws.com/registro/inscripcion',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -28,13 +28,13 @@
         $sRevision = $json['revision'];
 
         if ($sRevision == '') {
-            header("Location: https://portal.contigoentodo.com/#/inscribe/".$sId);
+            header("Location: https://portal.contigoentodo.com/inscripcion/confirmacion/".$sId);
         }
         else {
-            header("Location: https://portal.contigoentodo.com/#/login");
+            header("Location: https://portal.contigoentodo.com/iniciosesion");
         }
     }
     else {
-        header("Location: https://portal.contigoentodo.com/#/login");
+        header("Location: https://portal.contigoentodo.com/iniciosesion");
     }
 ?>
